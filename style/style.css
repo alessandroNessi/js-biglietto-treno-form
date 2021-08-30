@@ -1,0 +1,44 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: magenta;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.j-center{
+    justify-content: center;
+}
+.a-center{
+    align-items: center;
+}
+.fd-col{
+    flex-direction: column;
+}
+/* ////general */
+/* header */
+header h1{
+    color: white;
+    text-align: center;
+}
+/* ////header */
+/* main */
+.container{
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px;
+    padding: 20px;
+    border-radius: 5px;
+}
