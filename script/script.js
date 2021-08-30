@@ -1,5 +1,3 @@
-// add addEventListener to buttons an select
-// document.getElementById("insertData").addEventListener("click", insertData());
 var liElement="<li class=\"element\"><span class=\"nome\"></span><span class=\"offerta\"></span><span class=\"carrozza\"></span><span class=\"codice\"></span><span class=\"costo\"></span></li>"
 document.getElementById("deleteForm").addEventListener("click", function deleteForm(){
     document.getElementById("tiketsRecap").innerHTML="<li class=\"element\"><h3>NOME PASSEGGERO</h3><h4>Offerta</h4><h4>Carrozza</h4><h4>Codice CP</h4><h4>Costo Biglietto</h4></li>";
@@ -23,6 +21,10 @@ document.getElementById("insertData").addEventListener("click", function insertD
     console.log(age);
     if(userName!="" && !isNaN(distance) && age!="empty"){
         let i=document.getElementById("tiketsRecap").getElementsByClassName("element").length-1;
+        if(i==-1){
+            i=0;
+            document.getElementById("tiketsRecap").innerHTML="<li class=\"element\"><h3>NOME PASSEGGERO</h3><h4>Offerta</h4><h4>Carrozza</h4><h4>Codice CP</h4><h4>Costo Biglietto</h4></li>";
+        }
         document.getElementById("tiketsRecap").innerHTML+=liElement;
         document.getElementById("insertData").innerHTML="Aggiungi passeggero";
         distance*=0.21;
