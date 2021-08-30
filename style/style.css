@@ -7,6 +7,9 @@
 body{
     background-color: magenta;
 }
+ul{
+    list-style: none;
+}
 .p-std{
     padding: 10px
 }
@@ -30,9 +33,10 @@ body{
 }
 /* ////general */
 /* header */
-header h1{
+h2{
     color: white;
     text-align: center;
+    margin: 20px
 }
 /* ////header */
 /* main */
@@ -44,4 +48,7 @@ header h1{
     box-shadow: 2px 2px 5px;
     padding: 20px;
     border-radius: 5px;
+}
+table{
+    width: 100%;
 }
