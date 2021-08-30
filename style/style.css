@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: magenta;
+    background-color: rgba(255,0,255,0.5);
 }
 ul{
     list-style: none;
@@ -49,6 +49,24 @@ h2{
     padding: 20px;
     border-radius: 5px;
 }
-table{
+#formContainer .buttons button{
+    margin:5px 20px 0 20px;
+    padding: 2px 3px;
+}
+#tiketsRecap li{
     width: 100%;
+    border: 1px solid #bbbbbb;
+    border-width: 1px 1px 0px 1px;
+}
+#tiketsRecap li:last-child{
+    border-width: 1px 1px 1px 1px;;
+}
+#tiketsRecap .element *{
+    width: calc(20% - 3.5px);
+    display: inline-block;
+    padding: 5px 0;
+    border-right: 1px solid #bbbbbb;
+}
+#tiketsRecap .element *:last-child{
+    border: none;
 }

@@ -16,17 +16,17 @@
     <main>
         <div id="formContainer" class="container">
             <div class=" d-flex j-center">
-                <div class="d-flex j-center p-std">
+                <div class="p-std">
                     <label for="userName">Nome Cognome</label>
-                    <input id="userName" type="text" name="userName">
+                    <input class="d-block" class="d-block" id="userName" type="text" name="userName">
                 </div>
-                <div class="d-flex j-center p-std">
+                <div class="p-std">
                     <label for="distance">Km da percorrere</label>
-                    <input id="distance" type="number" name="distance">
+                    <input class="d-block" id="distance" type="number" name="distance">
                 </div>
-                <div class="d-flex j-center p-std">
+                <div class="p-std">
                     <label for="userAge">Età passeggero </label>
-                    <select id="userAge" name="userAge">
+                    <select class="d-block" id="userAge" name="userAge">
                         <option value="empty"></option>
                         <option value="minorenne">Minorenne</option>
                         <option value="maggiorenne">Maggiorenne</option>
@@ -44,28 +44,15 @@
             </div>
 
         </div>
-        <h2>IL TUO BIGLIETTO</h2>
+        <h2 id="secondTitle" class="d-none">IL TUO BIGLIETTO</h2>
         <div id="dataContainer" class="container d-none">
             <ul id="tiketsRecap">
-                <li>
-                    <table>
-                        <tr>
-                            <th>
-                                <h3>NOME PASSEGGERO</h3>
-                            </th>
-                            <th>Offerta</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th>Costo Biglietto</th>
-                        </tr>
-                        <tr>
-                            <td class="nome"></td>
-                            <td class="offerta"></td>
-                            <td class="carrozza"></td>
-                            <td class="codice"></td>
-                            <td class="costo"></td>
-                        </tr>
-                    </table>
+                <li class="element">
+                    <h3>NOME PASSEGGERO</h3>
+                    <h4>Offerta</h4>
+                    <h4>Carrozza</h4>
+                    <h4>Codice CP</h4>
+                    <h4>Costo Biglietto</h4>
                 </li>
             </ul>
         </div>
