@@ -13,26 +13,39 @@
     </header>
     <main>
         <div id="formContainer" class="container">
-            <div class="d-flex j-center">
-                <label for="userName">Nome Cognome</label>
-                <input id="userName" type="text" name="userName">   
+            <div class=" d-flex j-center">
+                <div class="d-flex j-center p-std">
+                    <label for="userName">Nome Cognome</label>
+                    <input id="userName" type="text" name="userName">   
+                </div>
+                <div class="d-flex j-center p-std">
+                    <label for="distance">Km da percorrere</label>
+                    <input id="distance" type="number" name="distance">
+                </div>
+                <div class="d-flex j-center p-std">
+                    <label for="userAge">Età passeggero </label>
+                    <select id="userAge" name="userAge">
+                        <option value="empty"></option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+                    </select>
+                </div>    
             </div>
-            <div class="d-flex j-center ">
-                <label for="distance">Km da percorrere</label>
-                <input id="distance" type="number" name="distance">
+            <div class="buttons">
+                <button id="insertData">
+                    Genera
+                </button>
+                <button id="deleteForm">
+                    Annulla
+                </button>
             </div>
-            <div class="d-flex j-center">
-                <label for="userAge">Età passeggero</label>
-                <select id="userAge" name="userAge">
-                    <option value="empty"></option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="over">Over 65</option>
-                </select>
-            </div>
+            
         </div>
-        <div id="dataContainer" class="container">
+        <div id="dataContainer" class="container d-none">
+            <ul id="tiketsRecap">
 
+            </ul>
         </div>
     </main>
     <script src="script/script.js"></script>
